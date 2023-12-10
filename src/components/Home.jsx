@@ -30,6 +30,7 @@ function Home() {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search for movies"
+          onKeyPress={() => searchMovies(searchTerm)}
         />
         <img
           src={icon}
